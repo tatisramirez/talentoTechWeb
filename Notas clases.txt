@@ -56,3 +56,17 @@ Disyuncion -> OR -> ||
 Negacion -> NOT -> !
 
 https://www.codecademy.com/learn/introduction-to-javascript
+
+
+Comandos GIT
+
+git config --global user.name "tatisramirez"
+git config --global user.email "tatis_543@hotmail.com"
+
+git --help
+
+git init - Inicializar git
+git add . - Agregar archivos
+git commit -m "Subir cambios" - Realizar commit
+git remote add origin https://github.com/tatisramirez/talentoTechWeb.git 
+git push -u origin master

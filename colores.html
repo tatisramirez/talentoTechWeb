@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="color1 bordes">
+        Elemento 1
+    </div>
+    <div class="color2 bordes margenes padding"> <i class="fa-solid fa-cat"></i>
+        Elemento 2 
+    </div>
+    <div>
+        <h1 class="text-shadow">Título</h1>
+        <p class="alineacion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, optio recusandae? Ducimus earum quo placeat, ullam odio impedit illum hic maiores saepe doloremque dolorem, facere perferendis unde, eos illo. Commodi.</p>
+    </div>
+    <button> Gato <i class="fa-solid fa-cat"></i></i></button> <br><br>
+    <a href="https://campus.talentotechbogota.co/" class="enlace" target="_blank">Talento Tech</a>
+
+    <div>
+        <h1 class="h1">Listas</h1>
+        <ul>
+            <li>Huevos</li>
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pescado</li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="h1">Tabla</h1>
+        <table id="estilo-tabla" style="font-family:cursive">
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Correo</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Cali</td>
+                <td>juan@correo.com</td>
+            </tr>
+            <tr>
+                <td>Camila</td>
+                <td>Bogotá</td>
+                <td>camila@correo.com</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>Cucuta</td>
+                <td>luis@correo.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1 class="h1">Posicionamiento</h1>
+        <div class="relative">
+            Relativo
+            <div class="absolute">
+                Absoluto
+                <div class="fixed">
+                    Fijado
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officia soluta inventore corrupti dolor recusandae consectetur, beatae dicta blanditiis explicabo dolore non natus repellendus, et dignissimos, rem pariatur similique repudiandae?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="h1">Float</h1>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nulla assumenda voluptates quia quo quibusdam accusamus voluptate itaque minima recusandae delectus, neque, deserunt in harum vero tempora odio dolorem pariatur!
+                <img class="float" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHf9JcVsqVK9ruBQ91PTP7y6XgEgJQ-i7PkQ&s">
+            </p>
+        </div>
+    </div>
+    <div>
+        <h1>Imagenes</h1>
+        <img class="imagen1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv1yf_-9mKuIdwgXZzRkYl8LDecXjK90SRn5s8zJB1Lw&s" alt="">
+
+        <img class="imagen2" src="https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1900&h=1267" alt="">
+
+        <img class="imagen3" src="https://urgenciesveterinaries.com/wp-content/uploads/2023/09/survet-gato-caida-pelo-01.jpeg" alt="">
+    </div>
+
+    <div class="transition">
+        <h1>Transiciones</h1>
+    </div>
+
+    <div class="animation">
+        <h1>Animaciones</h1>
+    </div>
+
+    <form action="">
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Nombre">
+        <label for="">Descripcion</label>
+        <textarea name="" id="" placeholder="Descripcion"></textarea>
+        <label for="">Pais</label>
+        <select name="" id="">
+            <option value="">Colombia</option>
+            <option value="">Canada</option>
+            <option value="">Chile</option>
+        </select>
+        <button>Enviar</button>
+
+    </form>
+
+    <h1>Grid</h1>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+</body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+    .color1{
+        background-color: rgb(80, 100, 255);
+        color: white;
+        border: solid;
+        border-color: rgb(99, 215, 215);
+        opacity: 0.5;
+    }
+
+    .color2{
+        /* Tamaño elemente */
+        width: 80%;
+        height: 300px;
+        background-color: rgb(113, 20, 199);
+        /* Imagen fondo */
+        background-image: url("data:image/jpeg;base64,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");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right top;
+        background-attachment: scroll;
+    }
+
+    .bordes{
+        /* Borde*/
+        border-style: dotted solid dashed double;
+        border-color: aqua;
+        border-width: 10px;
+        border-radius: 150px;
+    }
+
+    .margenes{
+        /* Margenes*/
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .padding{
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+
+    .alineacion-texto{
+        text-align: center;
+        text-align-last: right;
+        text-decoration-line: underline;
+        text-decoration-color: rgb(106, 0, 255);
+        text-decoration-style: dotted;
+        text-decoration-thickness: 3px;
+
+        text-transform:capitalize;
+        text-indent: 50px;
+        letter-spacing: 2px;
+        line-height: 2;
+        word-spacing: 10px;
+
+        font-weight: bold;
+    }
+
+    .text-shadow{
+        color: black;
+        text-shadow:2px 2px 5px cornflowerblue;
+        font-family: 'Audiowide', cursive;
+        font-style: oblique;
+        font-size: 60px;
+    }
+    .enlace{
+        text-decoration: none;
+        background-color: aquamarine;
+        padding: 5px;
+        border-radius: 5px;
+        border-bottom: yellow;
+        border-style: solid;
+        display: inline-block;
+        text-align: center;
+        cursor: progress;
+
+    }
+    /*Pseudo clases*/
+    .enlace:hover{
+        color: blue;
+        color: deeppink;
+    }
+
+    .enlace:active{
+        color: aqua;
+    }
+
+    ul>li{
+        list-style-type:square;
+        background-color: antiquewhite;
+        display: inline;
+        visibility: hidden;
+    }
+
+    ul{
+        background-color: tomato;
+        opacity: 0.6;
+        padding: 20px;
+    }
+    /*Estilo tabla*/
+    table#estilo-tabla{
+        border: 3px solid;
+        width: 60%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+    th, td{
+        border: 3px solid;
+        padding: 10px;
+        border-color: aqua;
+    }
+
+    table#estilo-tabla tr:nth-child(even){
+        background-color: rgb(152, 151, 151);
+    }
+
+    table#estilo-tabla tr:hover{
+        background-color: rgb(112, 244, 110);
+        color: white;
+    }
+
+    table#estilo-tabla th{
+        background-color: rgb(55, 168, 178);
+        color: white;
+    }
+    .h1{
+        color: rgb(32, 127, 155);
+        font-family: cursive;
+    }
+    /*Se adapta a la posición del padre*/
+    .relative{
+        border: 3px solid aqua;
+        width: 400px;
+        height: 200px;
+        position: relative;
+    }
+    /*Mantiene su posición fija*/
+    .absolute{
+        border: 3px solid blueviolet;
+        width: 200px;
+        height: 100px;
+        right: 0;
+        top: 80px;
+        position: absolute;
+
+        /*Alineación*/
+        text-align: right;
+    }
+    .fixed{
+        border: 3px solid rgb(116, 245, 80);
+        width: 100px;
+        height: 50px;
+        left:0;
+        top: 200px;
+        position: fixed;
+
+        /*Desbordado*/
+        overflow: auto;
+    }
+    .float{
+        width: 100px;
+        height: 150px;
+        float: left;
+    }
+    /*Pseudo elementos*/
+    h1::first-letter{
+        color:red ;
+        background-color: chartreuse;
+        font-size: 50px;
+    }
+
+    .imagen1{
+        width: 30%;
+        border-radius: 50px;
+        border: 3px solid black;
+        padding: 10px;
+        outline-color: rgb(137, 25, 228);
+        outline-style: solid;
+    }
+
+    .imagen2{
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        box-shadow: 5px 1px 20px aqua;
+    }
+    
+    .imagen3{
+        width: 30%;
+        display: block;
+        margin-top: 50px;
+        filter: blur(4px); /*difumina*/
+        filter: brightness(150%);/*brillo*/
+        filter: contrast(180%);/*contraste*/
+        filter: grayscale(80%);/*escala de grises*/
+        filter: hue-rotate(100deg); /*degrade*/
+        filter: invert(60%);/*inversión de colores*/
+        filter: saturate(5);/*saruración*/
+        filter: sepia(50%);/*sepia*/
+        filter:opacity(50%);/*opacidad*/
+    }
+
+    .imagen3:hover{
+        width: 50%;
+        transition: width 2s, height 4s;
+    }
+
+    .transition{
+        background-color: tomato;
+        width: 20%;
+        height: 100px;
+        transition: width 2s, transform 2s;
+        transition-timing-function: linear;
+        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
+        transition-delay: 1s;        
+    }
+
+    .transition:hover{
+        width: 30%;
+        transform: rotate(90deg);
+        transform: translate(120px, 50%);
+        transform: scale(0.5) translate(-100%, -100%);        
+    }
+
+    .animation{
+        width: 25%;
+        height: 100px;
+        background-color: aqua;
+        position: relative;
+        /*animation-name: ejemplo;*/
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes ejemplo{
+        0% {color: black; border-radius: 5px; background-color: red;left: 0;top: 0;}
+        25% {color: white; border-radius: 20px; background-color: yellow;left: 200px;top: 0;}
+        50% {color: aqua; border-radius: 50px; background-color: blue;left: 200px;top: 200px;}
+        75% {color: sandybrown; order-radius: 20px; background-color: green;left: 0;top: 200px;}
+        100% {color: white; border-radius: 5px; background-color: red;left: 0;top: 0;}
+    }
+    /*Estilos formulario*/
+    input,textarea, select{
+       width: 100%;
+       padding: 10px 20px;
+       margin: 8px;
+       display: inline-block;
+       border: 1px solid rgb(36, 158, 152);
+       border-radius: 5px;
+       box-sizing: border-box;
+    }
+
+    button{
+        border-radius: 5px;
+        color: white;
+        background-color: chocolate;
+        padding: 10px 20px;
+        width:100%;
+        margin: 8px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: burlywood;
+    }
+
+    label{
+        font-family: cursive;
+        margin: 5px;
+        font-weight: bold;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: rgb(25, 176, 171);
+        padding: 10px;
+    }
+
+    .grid > div{
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 600px){
+        button{
+            width:200px;
+            background-color: pink;
+        }
+    }
+
+    @media screen and (min-width: 600px){
+        button{
+            width:50%;
+            background-color: rgb(109, 160, 248);
+        }
+    }
+
+</style>
+</html>

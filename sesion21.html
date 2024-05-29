@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    var num1 = parseInt(prompt("Ingrese el numero 1:"))
+    var num2 = parseInt(prompt("Ingrese el numero 2:"))
+    document.write("<br/>Los números ingresados son: " + num1+ ", " + num2)
+    var suma = num1 + num2
+    document.write("<br/>La suma es: " + suma)
+    var resta = num1 - num2
+    document.write("<br/>La resta es: " + resta)
+    var residuo = num1 % num2
+    document.write("<br/>El residuo es: " + residuo)
+    var multi = num1 * num2
+    document.write("<br/>La multiplicación es: " + multi)
+    var division = num1 / num2
+    document.write("<br/>La división es: " + division)
+    var potencia = num1 ** num2
+    document.write("<br/>La potenciación es: " + potencia)
+
+      /** Crear un algoritmo que reciba el alto y el ancho de un rectangulo y muestre en pantalla su area. */
+    // Ar = Alto*Ancho
+    // var base = parseInt(prompt("Ingrese la base de rectangulo: "))
+    // var altura = parseInt(prompt("Ingrese la altura del rectangulo: "))
+    // var area = base*altura
+    // document.write("El area del triangulo es: " + area)
+
+    /** Crear un algoritmo que reciba el radio y calcule el area de un circulo. 
+     * 1. Investigar cual es la formula del area de un circulo
+     *      Ac = PI*r^2
+     * 2. Recibir el radio que ingrese el usuario por pantalla
+     * 3. Crear una constante con el valor de PI
+     * 4. Implementar la formula para obtener el area
+     * 5. Mostrar el resultado en pantalla
+    */
+    //var radio = parseFloat(prompt("Ingrese el radio del circulo: ")) // Numero decimal
+    //const PI = 3.1416
+    //var areaCirculo = PI*radio**2
+    //document.write("El area del circulo es: "+ areaCirculo)
+
+   // Calculadora de Indice Masa Corporal
+   var peso = parseFloat(prompt("Ingrese el peso: "))
+   var altura = parseFloat(prompt("Ingrese la altura: "))
+   var imc = peso/altura**2
+   document.write("El IMC si su peso es: " + peso + " y su altura es: " + altura + " el IMC es igual a: " + imc)
+</script>
+</script>
+</html>

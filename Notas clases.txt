@@ -1,0 +1,58 @@
+Arbol DOM (Estructura HTML)
+Responsive (Se ajusta a diferentes tamaños y dispositivos)
+
+GET -> Envio por URL
+POST -> Envio por debajo para BackEnd (Seguridad)
+
+07/08/2024
+Tamaño elementos
+Imagen de fondo
+Bordes
+Margenes
+
+08/08/2024
+Iconos
+Pseudo código
+Listas con bordes y fondo
+Estilos tabla
+
+14/05/2024 JavaScript
+
+var nombre = 'Tatiana'
+var apellido = 'Ramirez'
+var edad= 33
+
+// Log to console
+console.log("Mi nombre es:", nombre)
+console.log("Mi apellido es:", apellido)
+console.log("Mi edad es:", edad)
+
+//Ejercicio
+
+var pelicula='It'
+var fecha='15/05/2024'
+var ciudad='Bogotá'
+var hora= '5pm'
+var cedula= 1032441308
+var usuario= 'tatisr'
+var tipo_funcion= '2D'
+var en_combo= true
+var usuario_frecuente= false
+const precio = 18500
+
+console.log("Nombre de pelicula:", pelicula)
+console.log("Fecha de la función:", fecha)
+console.log("Ciudad de la función:", ciudad)
+console.log("Hora de la función:", hora)
+console.log("Cedula:", cedula)
+console.log("Nombre usuario:", usuario)
+console.log("Tipo de función:", tipo_funcion)
+console.log("Combo:", en_combo)
+console.log("Usuario Frecuente:", usuario_frecuente)
+console.log("El precio es:", precio)
+
+Conjuncion -> AND -> &&
+Disyuncion -> OR -> ||
+Negacion -> NOT -> !
+
+https://www.codecademy.com/learn/introduction-to-javascript

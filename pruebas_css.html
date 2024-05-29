@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CSS</title>
+</head>
+<body>
+    <div style="background-color: aqua; font-family: cursive; text-align: center; color: rgb(181, 114, 244);">
+        Pruebas
+    </div>
+    <br>
+    <div>
+        Pruebas 2
+    </div>
+    <br>
+    <h1>Este es un ejemplo de h1</h1>
+    <br>
+    <button id="button-1" class="button">Enviar</button>
+    <br>
+    <h1>Otro ejemplo de h1</h1>
+    <button id="button-2" class="button"> Enviar 2</button>
+    <h2 class="class-1">Este es un ejemplo h2</h2>
+    <h2>Otro ejemplo h2</h2>
+    <!--Adding styles generates-->
+    <style>
+        h1{
+            background-color: aquamarine;
+            font-family: cursive;
+            color: rgb(112, 22, 196);
+            width: 200px;
+        }
+        h2{
+            background-color: rgb(54, 106, 237);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        /*Reference by tag name*/
+        button{
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border-color: blueviolet;
+            font-family: fantasy;
+        }
+        /*Reference by id*/
+        #button-1{
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            font-family: sans-serif;
+            font-size: medium;
+        }
+        #button-2{
+            background-color: rgb(41, 120, 209);
+            color: white;
+            border-radius: 10px;
+            font-family: cursive;
+            font-size: large;
+        }
+        /*Reference by class*/
+        .button{
+            background-color: black;
+            color: white;
+            width: 100px;
+            height: 50px;
+        }
+        .class-1{
+            font-size: small;
+            text-align: center;
+            color: black;
+        }
+    </style>
+</body>
+</html>

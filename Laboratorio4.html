@@ -11,7 +11,7 @@
             <select name="" id="tema" onchange="cambiarTema()">                
                 <option value="light">Claro</option>
                 <option value="dark">Oscuro</option>
-                <option value="crazy">Colorido</option>
+                <option value="laika">Purpura</option>
             </select>
         </div>        
         <div class="class1">
@@ -170,6 +170,7 @@
             border: none;
             cursor: pointer;
         }
+
         button:hover{
             background-color: rgb(211, 177, 245);
         }
@@ -254,8 +255,8 @@
         }else if(tema == "dark"){
             fondo = "black"
             letra = "white" 
-        }else if(tema == "crazy"){
-            fondo = "aquamarine"
+        }else if(tema == "laika"){
+            fondo = "#E6E6FA"
             letra = "black" 
         }
         body.style.backgroundColor = fondo
@@ -272,7 +273,7 @@
         var documento = document.getElementById("documento").value
         var fecha = document.getElementById("fecha_nacimiento").value
 
-        if(nombre && cedula){
+        if(nombre){
             alert("Los datos del formulario son: " + nombre + " " + cedula + " " + ciudad + " " + telefono + " " + direccion + " " + correo + " " + fecha)
         }     
         

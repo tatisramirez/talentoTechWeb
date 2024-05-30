@@ -15,9 +15,14 @@
             </select>
         </div>        
         <div class="class1">
-            <img class="imagen" data-src="https://laikapp.s3.amazonaws.com/web/assetss/logos/1708537967Logo-Laika-footer.webp" alt="Laika - Por más momentos peludos" aria-label="Laika - Por más momentos peludos" class="ml-2 text-right img-fluid img_laika_footer lazy" src="https://laikapp.s3.amazonaws.com/web/assetss/logos/1708537967Logo-Laika-footer.webp" style>
+            <img class="imagen" id="logo" data-src="https://laikapp.s3.amazonaws.com/web/assetss/logos/1708537967Logo-Laika-footer.webp" alt="Laika - Por más momentos peludos" aria-label="Laika - Por más momentos peludos" class="ml-2 text-right img-fluid img_laika_footer lazy" src="https://laikapp.s3.amazonaws.com/web/assetss/logos/1708537967Logo-Laika-footer.webp" style>
+            <select onchange="cambiarTamanoLogo(value)">                
+                <option value="large">Grande</option>
+                <option value="medium">Mediano</option>
+                <option value="small">Pequeño</option>
+            </select>
             <h1>LAIKA <i class="fa-solid fa-shield-cat"></i> <i class="fa-solid fa-paw"></i> Por más momentos peludos <i class="fa-solid fa-paw"></i> <i class="fa-solid fa-shield-dog"></i></h1>
-        </div>
+        </div>        
         <div class="class1">
             <p>Laika es la tienda online más completa para mascotas creada por pet lovers para pet lovers! Somos la tienda en línea de mascotas con mayor variedad de productos y servicios a domicilio en Colombia, contamos con más de 4.000 productos (alimentos, dietas naturales, snacks, medicinas, higiene y accesorios) y más de 17 servicios como (medicina veterinaria prepagada, veterinario a domicilio, vacunación, baños, funeraria, entrenador, gaticuidadores, información de colegios, fundaciones, entre otros.</p>
         </div>
@@ -135,8 +140,8 @@
     </body>
     <style>
         .imagen{
-            width: 8%;
-            height: 8%;
+            /*width: 8%;*/
+            /*height: 8%;*/
             border-radius: 30px;
             border-color: rgb(211, 177, 245);
             border-style: solid;
@@ -277,6 +282,19 @@
             alert("Los datos del formulario son: " + nombre + " " + cedula + " " + ciudad + " " + telefono + " " + direccion + " " + correo + " " + fecha)
         }     
         
+    }
+
+    function cambiarTamanoLogo(tamano){
+        var logo = document.getElementById("logo")
+        var tamanoLogo = ""
+        if(tamano == "small"){
+            tamanoLogo = 300
+        }else if(tamano == "medium"){
+            tamanoLogo = 600
+        }else if(tamano == "large"){
+            tamanoLogo = 900
+        }
+        logo.style.width = tamanoLogo + "px"
     }
 
 </script>

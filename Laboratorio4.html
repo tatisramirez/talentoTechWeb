@@ -15,11 +15,11 @@
             </select>
         </div>        
         <div class="class1">
-            <img class="imagen" id="logo" data-src="https://laikapp.s3.amazonaws.com/web/assetss/logos/1708537967Logo-Laika-footer.webp" alt="Laika - Por más momentos peludos" aria-label="Laika - Por más momentos peludos" class="ml-2 text-right img-fluid img_laika_footer lazy" src="https://laikapp.s3.amazonaws.com/web/assetss/logos/1708537967Logo-Laika-footer.webp" style>
-            <select onchange="cambiarTamanoLogo(value)">                
-                <option value="large">Grande</option>
+            <img class="imagen" id="logo" alt="Laika - Por más momentos peludos" class="ml-2 text-right img-fluid img_laika_footer lazy" src="https://laikapp.s3.amazonaws.com/web/assetss/logos/1708537967Logo-Laika-footer.webp">
+            <select onchange="cambiarTamanoLogo(value)">
+                <option value="small">Pequeño</option>           
                 <option value="medium">Mediano</option>
-                <option value="small">Pequeño</option>
+                <option value="large">Grande</option>                
             </select>
             <h1>LAIKA <i class="fa-solid fa-shield-cat"></i> <i class="fa-solid fa-paw"></i> Por más momentos peludos <i class="fa-solid fa-paw"></i> <i class="fa-solid fa-shield-dog"></i></h1>
         </div>        
@@ -140,8 +140,8 @@
     </body>
     <style>
         .imagen{
-            /*width: 8%;*/
-            /*height: 8%;*/
+            width: 8%;
+            height: 8%;
             border-radius: 30px;
             border-color: rgb(211, 177, 245);
             border-style: solid;
@@ -285,14 +285,14 @@
     }
 
     function cambiarTamanoLogo(tamano){
-        var logo = document.getElementById("logo").value
+        var logo = document.getElementById("logo")
         var tamanoLogo = 0
         if(tamano == "small"){
-            tamanoLogo = 300
+            tamanoLogo = 200
         }else if(tamano == "medium"){
-            tamanoLogo = 600
+            tamanoLogo = 300
         }else if(tamano == "large"){
-            tamanoLogo = 900
+            tamanoLogo = 500
         }
         logo.style.width = tamanoLogo + "px"
     }

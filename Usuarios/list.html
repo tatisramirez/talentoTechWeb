@@ -51,6 +51,8 @@
                 const acciones = document.createElement('td')
                 const editar = document.createElement('a')
                 editar.textContent = 'Editar'
+                editar.textContent = 'Editar'
+                editar.href = './create.html?id='+user._id
 
                 const eliminar = document.createElement('button') // Creamos la etiqueta button
                 eliminar.textContent = 'Eliminar' // Agregamos el texto al boton
@@ -73,8 +75,7 @@
 
     // Funcion para eliminar un usuario, pasandole el id
     function eliminarUsuario(id, row){
-        // Esta es la url de eliminacion, por ejemplo
-        // http://localhost:3000/usuario/6668ed6bff9c23e033128545
+        // Esta es la url de eliminacion, por ejemplo        
         const deleteUrl = 'http://localhost:3000/usuario/'+id
         // Ejecuto la accion del API
         fetch(deleteUrl, {

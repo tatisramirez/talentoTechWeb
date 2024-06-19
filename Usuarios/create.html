@@ -37,28 +37,48 @@
                 correo: document.getElementById('correo').value,
                 password: document.getElementById('password').value
             }
-
-            fetch('http://localhost:3000/usuario', {
-                method: 'POST',
-                headers:{
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => {
-                return response.json()
-            })
-            .then(data => {                
-                if(data.status == "success"){
-                    alert('Usuario registrado correctamente')
-                    window.location.href = "./list.html"
-                }else{
-                    alert(data.msg)
-                }
-            })
-            .catch(error => console.log("Error: ", error))
+            submitForm(data, "http://localhost:3000/usuario", "POST")
         })
+
+        // Obtenemos el id de la url
+        const searchParams = new URLSearchParams(window.location.search)
+        if(searchParams.has('id')){
+            const id = searchParams.get("id") // Asignamos el id a una variable
+            // Consulta la informacion del usuario que tiene ese id
+            fetch('http://localhost:3000/usuario/'+id)
+            .then(response => response.json()) // Lo convierte a formato json
+            .then(data => {
+                // Asignamos la informacion al formulario
+                document.getElementById('nombre').value = data.nombre
+                document.getElementById('apellido').value = data.apellido
+                document.getElementById('correo').value = data.correo
+            })
+        }
     })
+
+        function submitForm(data, url, method){
+            fetch(url, {
+                    method: method,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => {
+                    return response.json()                
+                })
+                .then(data => {
+                    if(data.status == "success"){
+                        alert('Usuario registrado correctamente')
+                        window.location.href = "./list.html";
+                    }else{
+                        alert(data.msg)
+                    }
+                })
+                .catch((error) => console.log("Error: ", error))
+        }
+
+            
 </script>
 
 </html>

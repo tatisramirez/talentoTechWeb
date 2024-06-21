@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../assets/loadNavbar.js"></script>  
+    <div id="navbar"></div>
 </head>
 <body>
     <form id="guardarUsuario">
@@ -25,6 +27,11 @@
 <script>
     // Ejecuta una acción cuando carga la página
     document.addEventListener('DOMContentLoaded', function(){
+
+        // Obtenemos el id de la url
+        const searchParams = new URLSearchParams(window.location.search)
+        const id = searchParams.get("id") // Asignamos el id a una variable
+
         // Acceder a la información de la etiqueta form
         const form = document.getElementById('guardarUsuario')
         // Ejecuto una acción cuando el formulario se envia
@@ -37,13 +44,15 @@
                 correo: document.getElementById('correo').value,
                 password: document.getElementById('password').value
             }
-            submitForm(data, "http://localhost:3000/usuario", "POST")
-        })
 
-        // Obtenemos el id de la url
-        const searchParams = new URLSearchParams(window.location.search)
-        if(searchParams.has('id')){
-            const id = searchParams.get("id") // Asignamos el id a una variable
+            if(searchParams.has('id')){//Si llega un id en la URL -> Actualizamos
+                submitForm(data, "http://localhost:3000/usuario/"+id, "PUT")
+            }else{
+                submitForm(data, "http://localhost:3000/usuario", "POST")
+            }           
+        })
+        
+        if(searchParams.has('id')){            
             // Consulta la informacion del usuario que tiene ese id
             fetch('http://localhost:3000/usuario/'+id)
             .then(response => response.json()) // Lo convierte a formato json
@@ -76,9 +85,7 @@
                     }
                 })
                 .catch((error) => console.log("Error: ", error))
-        }
-
-            
+        }            
 </script>
 
 </html>

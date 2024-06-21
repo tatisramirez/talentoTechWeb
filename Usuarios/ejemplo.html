@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laika</title>
+        <script src="../assets/loadNavbar.js"></script>    
+        <div id="navbar"></div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body id="body">
+        <div class="selector-tema">
+            <select name="" id="tema" onchange="cambiarTema()">                
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+                <option value="laika">Purpura</option>
+            </select>
+        </div>        
+        <div class="class1">
+            <img class="imagen" id="logo" alt="Laika - Por más momentos peludos" class="ml-2 text-right img-fluid img_laika_footer lazy" src="https://laikapp.s3.amazonaws.com/web/assetss/logos/1708537967Logo-Laika-footer.webp">
+            <select onchange="cambiarTamanoLogo(value)">
+                <option value="small">Pequeño</option>           
+                <option value="medium">Mediano</option>
+                <option value="large">Grande</option>                
+            </select>
+            <h1>LAIKA <i class="fa-solid fa-shield-cat"></i> <i class="fa-solid fa-paw"></i> Por más momentos peludos <i class="fa-solid fa-paw"></i> <i class="fa-solid fa-shield-dog"></i></h1>
+        </div>        
+        <div class="class1">
+            <p>Laika es la tienda online más completa para mascotas creada por pet lovers para pet lovers! Somos la tienda en línea de mascotas con mayor variedad de productos y servicios a domicilio en Colombia, contamos con más de 4.000 productos (alimentos, dietas naturales, snacks, medicinas, higiene y accesorios) y más de 17 servicios como (medicina veterinaria prepagada, veterinario a domicilio, vacunación, baños, funeraria, entrenador, gaticuidadores, información de colegios, fundaciones, entre otros.</p>
+        </div>
+        <div class="class1">
+            <h3>Servicios</h3>
+            <ol>
+                <li>Colegio/Guarderia</li>
+                <li>Restaurante Pets</li>
+                <li>Hoteles Pet-friendly</li>                
+        </div>
+        <div class="class1">
+            <h4>Categorias</h4>
+            <ul>
+                <li>Alimento</li>
+                <li>Juguetes</li>
+                <li>Accesorios</li>
+                <li>Snacks</li>
+                <li>Cuidado e higiene</li>                    
+        </div>
+        <div class="class1">
+            <h3>Datos de contacto</h3>
+            <p>Teléfono: 3009108496 / Correo electrónico: servicioclientes@laika.com.co</p>
+        </div>     
+        <br>
+        <div>
+            <iframe width="400" height="315" src="https://www.youtube.com/embed/ySgCU7z1E_Q?si=ks9Mdse8rBc7WvTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+        <br>
+        <div class="class1">
+            <a href="https://laika.com.co/" target="_blank" class="enlace">Conoce nuestra página</a>
+        </div> 
+        <hr>
+        <h1 class="class1">Formulario de Contacto <i class="fa-solid fa-paw"></i></h1>
+        <fieldset>
+            <legend class="class1"> Por favor ingrese sus datos para obtener más información </legend>       
+        <form method="POST" class="class1">
+            <label for="">Nombre</label>        
+            <input type="text" required placeholder="Ingrese su nombre" name="nombre" id="nombre"> <br><br>
+            <label for="">Cédula</label> 
+            <input type="number" required placeholder="Ingrese su cédula" name="cedula" id="cedula"> <br><br>
+            <label for="">Seleccione una Ciudad</label>
+            <select name="ciudad" id="ciudad">
+                <option value="Bogotá">Bogotá</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Cali">Cali</option>
+                <option value="Medellin">Medellín</option> <br><br>
+            </select> <br><br> 
+            <label for="">Teléfono</label>
+            <input type="tel" required placeholder="Ingrese su teléfono" name="telefono" id="telefono"> <br><br> 
+            <label for="">Dirección</label>
+            <textarea name="" id="direccion" placeholder="Ingrese su dirección completa" cols="30" rows="3" name="direccion"></textarea> <br><br>
+            <label for="">Correo electrónico</label>
+            <input type="email" required placeholder="Ingrese correo electrónico" name="correo_electronico" id="correo_electronico"> <br><br>
+            <label for="">Documento Anexo</label>
+            <input type="file" required name="documento" id="documento"> <br><br> 
+            <label for="">Fecha de nacimiento</label>
+            <input type="date" required name="fecha_nacimiento" id="fecha_nacimiento"> <br><br>
+            <button onclick="enviarFormulario()"><i class="fa-solid fa-dog"></i>  Enviar  <i class="fa-solid fa-cat"></i></button>
+        </fieldset>
+        <hr>
+        <h1 class="class1">Ventas mensuales 2023 <i class="fa-solid fa-paw"></i> </h1>
+        <p class="class1">A continuación encontrará información de nuestras ventas mensuales del año 2023</p>
+        <table class="class1" id="tabla">
+            <tr> 
+                <th>Mes</th>
+                <th>Valor ventas</th>               
+            </tr>
+            <tr>
+                <td>Enero</td>
+                <td>10.000.000</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>32.000.000</td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td>26.000.000</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>45.000.000</td>
+            </tr>
+            <tr>
+                <td>Mayo</td>
+                <td>5.000.000</td>
+            </tr>
+            <tr>
+                <td>Junio</td>
+                <td>50.000.000</td>
+            </tr>
+            <tr>
+                <td>Julio</td>
+                <td>22.000.000</td>
+            </tr>
+            <tr>
+                <td>Agosto</td>
+                <td>15.000.000</td>
+            </tr>
+            <tr>
+                <td>Septiembre</td>
+                <td>9.000.000</td>
+            </tr>
+            <tr>
+                <td>Octubre</td>
+                <td>55.000.000</td>
+            </tr>
+            <tr>
+                <td>Noviembre</td>
+                <td>100.000.000</td>
+            </tr>
+            <tr>
+                <td>Diciembre</td>
+                <td>250.000.000</td>
+            </tr>
+    </body>
+    <style>
+        .imagen{
+            width: 8%;
+            height: 8%;
+            border-radius: 30px;
+            border-color: rgb(211, 177, 245);
+            border-style: solid;
+            display: block;
+            margin-inline: auto;
+            box-shadow: 10px 5px 30px rgb(211, 177, 245);
+            border-style: dotted dotted dotted dotted;
+        }
+
+        .class1{
+            font-family:cursive;
+        }
+
+        input,textarea, select{
+            width: 80%;
+            padding: 8px 10px;
+            margin: 5px;
+            display: inline-block;
+            border: 2px solid rgb(211, 177, 245);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button{
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(117, 30, 194);
+            padding: 8px 10px;
+            width:100%;
+            margin: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(211, 177, 245);
+        }
+
+        table#tabla{
+            border: 3px solid;
+            width: 25%;
+            text-align: center;
+            border-collapse: collapse;
+            margin-inline: auto;
+        }
+
+        th, td{
+            border: 3px solid;
+            padding: 5px;
+            border-color: rgb(117, 30, 194);
+        }
+
+        table#tabla tr:nth-child(even){
+            background-color: rgb(211, 177, 245);
+        }
+
+        table#tabla tr:hover{
+            background-color: rgb(117, 30, 194);
+            color: white;
+        }
+
+        table#tabla th{
+            background-color: rgb(117, 30, 194);
+            color: white;
+        }
+
+        ol > li{
+            list-style-type:decimal;
+            background-color: rgb(222, 201, 243); 
+            padding: 8px;  
+            margin-left: 35px;                  
+        }
+
+        ol{
+            background-color:  rgb(160, 122, 199);
+            opacity: 0.8;
+            padding: 15px;
+        }
+
+        ul > li{
+            list-style-type:square;
+            background-color: rgb(222, 201, 243); 
+            padding: 8px;  
+            margin-left: 35px;                  
+        }
+
+        ul{
+            background-color:  rgb(160, 122, 199);
+            opacity: 0.8;
+            padding: 15px;
+        }
+
+        .enlace{
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;            
+            border-style:dashed;
+            display: inline-block;
+            text-align: center;
+            cursor: progress;
+        }
+        .enlace:hover{
+            color: deeppink;
+        }
+    </style>
+
+<script>
+    function cambiarTema(){
+        var body = document.getElementById("body")
+        var tema = document.getElementById("tema").value
+        var fondo = ""
+        var letra = ""
+        if(tema == "light"){
+            fondo = "white" 
+            letra = "black" 
+        }else if(tema == "dark"){
+            fondo = "black"
+            letra = "white" 
+        }else if(tema == "laika"){
+            fondo = "#E6E6FA"
+            letra = "black" 
+        }
+        body.style.backgroundColor = fondo
+        body.style.color = letra
+    }
+
+    function enviarFormulario(){
+        var nombre = document.getElementById("nombre").value
+        var cedula = document.getElementById("cedula").value
+        var ciudad = document.getElementById("ciudad").value
+        var telefono = document.getElementById("telefono").value
+        var direccion = document.getElementById("direccion").value
+        var correo = document.getElementById("correo_electronico").value
+        var documento = document.getElementById("documento").value
+        var fecha = document.getElementById("fecha_nacimiento").value
+
+        if(nombre){
+            alert("Los datos del formulario son: " + nombre + " " + cedula + " " + ciudad + " " + telefono + " " + direccion + " " + correo + " " + fecha)
+        }     
+        
+    }
+
+    function cambiarTamanoLogo(tamano){
+        var logo = document.getElementById("logo")
+        var tamanoLogo = 0
+        if(tamano == "small"){
+            tamanoLogo = 200
+        }else if(tamano == "medium"){
+            tamanoLogo = 300
+        }else if(tamano == "large"){
+            tamanoLogo = 500
+        }
+        logo.style.width = tamanoLogo + "px"
+    }
+
+</script>
+</html>
